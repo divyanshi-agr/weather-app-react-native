@@ -16,6 +16,7 @@ export default function WeatherInfo({ currentWeather }) {
 
   return (
     <View style={styles.weatherInfo}>
+      <Text style={styles.heading}>Divyanshi's Weather App ☺️</Text>
       <Text>{name}</Text>
       <Image style={styles.weatherIcon} source={{ uri: iconUrl }} />
       <Text style={styles.textPrimary}>{temp}º</Text>
@@ -26,6 +27,10 @@ export default function WeatherInfo({ currentWeather }) {
 }
 
 const styles = StyleSheet.create({
+  heading: {
+    fontSize: 22,
+    marginBottom: 20,
+  },
   weatherInfo: {
     alignItems: "center",
   },
